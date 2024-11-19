@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e0e5ec;
+}
+:root{
+    --Primary:#1A73E8;
+    --Accent:#34A853;
+    --Background: #FFFFFF;
+    --Heading-Text:#202124;
+    --Para-Text: #333333;
+    --nav-color: #F8F9FA;
+}
+/* :root{
+    --Primary:#1A73E8;
+    --Accent:#34A853;
+    --Background: #FFFFFF;
+    --Heading-Text:#202124;
+    --Para-Text: #333333;
+    --nav-color: #F8F9FA;
+} */
+h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway", sans-serif;
+    color: var(--Heading-Text);
+    text-transform: capitalize;
+}
+span{
+    color: var(--Primary);
+}
+p{
+    font-family: "Roboto", sans-serif;
+    color: var(--Para-Text);
+}
+/* :root{
+    --Primary: #008080;
+    --Accent:#FF7F50;
+    --Background: #F8F9FA;
+    --Text: #333333;
+} */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    /* background: url(./images/bg2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; */
+    padding-top: 20px;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Text);
+    padding: 10px 40px;
+    background-color: #e0e5ec;
+    box-shadow:8px 8px 15px rgba(70, 70, 70, 0.15), 
+    -8px -8px 15px rgba(255, 255, 255, 0.7);
+    /* box-shadow: 0px 2px 4px rgba(181, 181, 181, 0.1); */
+    position: fixed;
+    z-index: 100;
+}
+.logo-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    /* border: 2px solid #0d5bc2; */
+    box-shadow:8px 8px 15px rgba(70, 70, 70, 0.15), 
+    -8px -8px 15px rgba(255, 255, 255, 0.7);
+}
+.logo-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--Heading-Text);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif
+}
+nav ul li::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--Primary);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: all .2s ease-in-out;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.contact{
+    color: var(--nav-color);
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow:8px 8px 15px rgba(70, 70, 70, 0.15), 
+    -8px -8px 15px rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    border-radius: 8px;
+}
+i{
+    color: var(--Primary);
+    font-size: 25px;
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 100px;
+}
+.hero-text{
+    width: 500px;
+}
+.hero-text p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 35px;
+}
+.hero-text h1{
+    font-size: 48px;
+}
+.hero-text h2{
+    margin-top: 12px;
+}
+.hero-image{
+    width: 300px;
+    height: 400px;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+button{
+    padding: 12px 0;
+    border-radius: 5px;
+    border: none;
+    background: var(--Primary);
+    color: var(--nav-color);
+    text-transform: capitalize;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 200px;
+    position: relative;
+    transition: all .2s ease-in-out;
+    box-shadow:8px 8px 15px rgba(70, 70, 70, 0.15), 
+    -8px -8px 15px rgba(255, 255, 255, 0.7);
+}
+.resume-btn{
+    background-color: #e0e5ec;
+    /* border: 2px solid var(--Primary); */
+    margin-left: 20px;
+    color: var(--Primary);
+}
+.resume-btn:hover{
+    /* background-color: #d1e1f7; */
+    box-shadow: 10px 10px 20px rgba(70, 70, 70, 0.25), 
+              -10px -10px 20px rgba(255, 255, 255, 0.8); 
+}
+
+.portfolio-btn:hover{
+    background-color: #0d5bc2;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 70px;
+}
+.icon-img{
+    background-color: #e0e5ec;
+    width: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow:8px 8px 15px rgba(70, 70, 70, 0.15), 
+    -8px -8px 15px rgba(255, 255, 255, 0.7);
+
+
+}
+.services{
+    text-align: center;
+    padding: 150px 0;
+}
+.services-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 0;
+}
+.service-card {
+    background-color: #e0e5ec; 
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    height: 200px;
+    box-shadow: inset 8px 8px 15px #aeaec0,  
+                inset -8px -8px 15px #ffff; 
+    transition: box-shadow 1s ease-in-out;
+  }
+  
+  .service-card h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: var(--Primary);
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: var(--Para-Text);
+  }
+  
+  .service-card:hover {
+    box-shadow: inset 10px 10px 20px rgba(70, 70, 70, 0.25),
+                inset -10px -10px 20px rgba(255, 255, 255, 0.8);
+  }
+  .service-card{
+        background-color: #e0e5ec; 
+        border-radius: 20px;
+        padding: 30px;
+        width: 300px;
+        box-shadow:8px 8px 15px rgba(70, 70, 70, 0.15), 
+        -8px -8px 15px rgba(255, 255, 255, 0.7);
+        
+      }
+  
