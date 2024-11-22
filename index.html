@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="./javascript.js" defer></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -13,16 +13,17 @@
  <div class="hero">
     <header>
        <div class="logo">
-        <div class="logo-image"><img src="./images/Straus Inspiration.jpg" alt=""></div>
+        <div class="logo-image"><img src="./images/me3-removebg-preview.png" alt=""></div>
        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about me</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="">skills</a></li>
-                <li><a href="">resume</a></li>
-                <li><a href="">contact</a></li>
+            <ul id="navList">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">contact</a></li>
 
             </ul>
         </nav>
@@ -30,8 +31,10 @@
              <i class="fa-solid fa-phone"></i>
             <p>+254 792 014 534</p>
             </div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            
     </header>
-    <div class="hero-content">
+    <div class="hero-content" id="home">
         <div class="hero-text">
             <h3>hello, <span>I'm</span></h3>
             <h1><span>Mercy Kabingu</span></h1>
@@ -57,9 +60,61 @@
     </div>
  </div>
  <!-- about me -->
+  <section>
+    <div class="about-container" id="about">
+        <div class="about-image">
+            <img src="./images/download (6).jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h4>about me</h4>
+            <h2>who am i</h2>
+            <p>Hi, I’m Mercy Kabingu, a designer and developer with a passion for creating great user experiences. I specialize in UI/UX design, web development, and data visualization, and I love turning ideas into clean, functional designs that are both user-friendly and visually appealing. I have experience working with a range of technologies, including HTML, CSS, JavaScript, MySQL, Python, and PHP, so I’m comfortable building everything from simple websites to more complex web applications. I also work with Power BI to create data visualizations that make complex data easy to understand and actionable. Whether I’m working on the design or the code, I’m always focused on delivering solutions that are both practical and enjoyable for users.</p>
+            
+          <div class="skills-icons">
+            <div class="icon-img"><i class="fa-brands fa-html5"></i></div>
+            <div class="icon-img"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="icon-img"><i class="fa-brands fa-js"></i></div>
+            <div class="icon-img"><i class="fa-brands fa-php"></i></div>
+            <div class="icon-img"><i class="fa-solid fa-database"></i></div>
+            <div class="icon-img"><i class="fa-brands fa-python"></i></div>
+          </div>
+        </div>
+    </div>
+  </section>
   <!-- what can i do (my service)-->
-   <section class="services">
-    <h1>welcome to my world</h1>
+   <section class="services" id="skills">
+    <h1>my skills</h1>
+    
+<div class="skills-container">
+    <div class="skills-set">
+        <li>
+            <h4>html</h4>
+            <span class="bar"><span class="html"></span></span>
+        </li>
+        <li>
+            <h4>css</h4>
+            <span class="bar"><span class="css"></span></span>
+        </li>
+        <li>
+            <h4>javascript</h4>
+            <span class="bar"><span class="javascript"></span></span>
+        </li>
+        <li>
+            <h4>php</h4>
+            <span class="bar"><span class="php"></span></span>
+        </li>
+        <li>
+            <h4>sql</h4>
+            <span class="bar"><span class="sql"></span></span>
+        </li>
+        <li>
+            <h4>python</h4>
+            <span class="bar"><span class="python"></span></span>
+        </li>
+    </div>
+</div>
+<div class="work-service-container" id="services">
+    <h1>what i do</h1>
     <p>I’m a tech enthusiast who loves designing intuitive user interfaces, <br>developing innovative websites, and transforming data into meaningful insights. </p>
     <div class="services-container">
         <div class="service-card">
@@ -78,10 +133,11 @@
             <p>Proficient in Power BI, creating interactive dashboards and reports, transforming complex data into actionable insights for informed decision-making.</p>
         </div>
     </div>
+</div>
    </section>
  <!-- portfolio -->
-  <section class="porfolio">
-    <h5>Visit my portfolio and lets here tour feedback</h5>
+  <section class="porfolio" id="portfolio">
+    <h4>Visit my portfolio and lets here tour feedback</h4>
     <h1>my portfolio</h1>
     <div class="portfolio-projects">
         <div class="project">
@@ -109,38 +165,72 @@
         </div>
     </div>
     
-    <h6></h6>
+    
   </section>
-  <!-- my resume -->
-   <section class="resume">
-    <h5>review of education</h5>
+  <!-- my education -->
+   <section class="education" id="education">
+    <h4>review of education</h4>
     <h1>my resume</h1>
 
    </section>
    <!-- education -->
   <!-- lets work together contact section-->
-   <section class="work-contact">
+   <section class="work-contact" id="contact">
     <div class="connecting">
         <div class="contact-message">
+           <div class="contact-massage-text">
             <h2>I'd Love to Hear From You</h2>
+            <h5>Let's work together on your next project</h5>
             <p>Reach out today for inquiries, collaborations, or project discussions.</p>
+            <div class="contact"><i class="fa-solid fa-phone"></i> <p>+254 792 014 534</p>
+               </div>
+           </div>
         </div>
         <div class="contact-form">
             <form action="">
-                <div class="form-logo">
-                    <!-- <img src="./images/bg1.jpg" alt=""> -->
+                <div class="form-logo-container">
+                    <div class="form-logo">
+                        <img src="./images/contact-logo.jpg" alt="">
+                    </div>
                 </div>
                 <h2>web development</h2>
                 <p>Feel free to contact me anytime</p>
                 <input type="text" name="name" id="name" placeholder="Name" required>
                 <input type="email" name="email" id="email" placeholder="Email" required>
-                <textarea name="message" id="message" cols="4" rows="8" placeholder="Message"></textarea>
-                <input type="submit" name="send" id="send" value="Send">
+                <textarea name="message" id="message" cols="4" rows="4" placeholder="Message"></textarea>
+                <input type="submit" name="send" id="send" value="Send"class="submit-btn">
             </form>
         </div>
     </div>
 
    </section>
+   <!-- footer -->
+    <section>
+        <footer>
+       <div class="footer-nav">
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">contact</a></li>
+
+            </ul>
+        </nav>
+       </div>
+       <div class="footer-icons">
+        <div class="icon-img"><a href="https://github.com/Dev-Kabingu"><i class="fa-brands fa-square-github"></i></a></i></div>
+        <div class="icon-img"><a href="https://www.linkedin.com/in/mercy-kabingu-552175334/"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class="icon-img"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icon-img"><a href="https://wa.me/0792014534"><i class="fa-brands fa-square-whatsapp"></i></a></div>
+    </div>
+       <p>&copy; 2024 Mercy Kabingu Portfolio. All Rights Reserved.</p>
+        </footer>
+    </section>
+    <script src="./javascript.js"></script>
     
 </body>
 </html>
