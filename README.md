@@ -1,5 +1,5 @@
 Mercy Nduta kabingu
-link to my live portfolio website: https://dev-kabingu.github.io/kabingu-portfolio/#home
+link to my live portfolio website: https://dev-kabingu.github.io/kabingu-portfolio/
 
 Welcome to my portfolio! This repository showcases my skills, experience, and projects as a UI/UX designer and software engineer. It highlights my journey, creativity, and expertise in building user-centered designs and functional applications. The portfolio is designed to inspire confidence in my abilities while providing a seamless experience for visitors.
 
